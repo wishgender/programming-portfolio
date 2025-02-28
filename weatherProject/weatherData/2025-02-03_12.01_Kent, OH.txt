@@ -1,0 +1,13 @@
+
+
+Current date & time: access_time 11:53 AM EST on February 3, 2025 (GMT -5) | Updated 1 minute ago
+Location: Kent, OH
+Current Temperature: 52 °F
+Maximum temperature: 53°
+Minimum temperature: 28°
+Pressure: 29.93"
+Sky conditions: Partly Cloudy
+Wind: 2 mph from W
+Humidity: 73%
+Rainfall: 0"
+Snow Depth: 0"

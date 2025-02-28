@@ -1,0 +1,13 @@
+
+
+Current date & time: access_time 9:55 AM MST on February 3, 2025 (GMT -7) | Updated 1 minute ago
+Location: Phoenix, AZ
+Current Temperature: 53 °F
+Maximum temperature: 84°
+Minimum temperature: 56°
+Pressure: 30.02"
+Sky conditions: Partly Cloudy
+Wind: 2 mph from NNE
+Humidity: 32%
+Rainfall: 0"
+Snow Depth: 0"

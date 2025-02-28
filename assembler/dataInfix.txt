@@ -1,0 +1,10 @@
+( ( AB + ( BC * CD ) ) - ( DE / EF ) ) ;
+( ( ( ANTEATER + WHALE ) / ( CAT - DOG ) ) * ( ELEPHANT + MANATEE ) ) ;
+( ( ( PURPLE * CHARTREUSE ) + ( RED / SILVER ) ) - ( TURQUOISE + AT ) ) ;
+( ABCDEFG + ( STAR * ( OCEAN - ( JOYOUSLY / KITE ) ) ) ) ;
+( ( 72 + ( 109 * 32 ) ) / ( 47 - ( 2 + 17 ) ) ) ;
+( ( ( XRAY * 28 ) + 812 ) * ( ( 4 + QS ) - 12 ) ) ;
+( ( 235678 + ( 73 - ( 12 * D ) ) ) + ( 899 / 4 ) ) ;
+( MMMMMMMMM - ( NNNNNNN + ( ( ( OOOOOOOOO * PP ) / QQQ ) ) * RRRRRRRRRRR ) ) ;
+( ( APPLE + ( BANANA * ( CHERRY + DURIAN ) ) ) / ( ELDERBERRY - ( FIG / GRAPE ) ) ) ;
+( ( SQUASH + ( TURNIP * BROCCOLI ) ) - ( CAULIFLOWER / ( CORN + ZUCCHINI ) ) ) ;

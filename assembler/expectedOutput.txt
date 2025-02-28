@@ -1,0 +1,190 @@
+//This is the expected output for ./postfix dataInfix.txt
+Infix Expression: ( ( ( ANTEATER + WHALE ) / ( CAT - DOG ) ) * ( ELEPHANT + MANATEE ) ) 
+Postfix Expression:  ANTEAT WHALE + CAT DOG - / ELEPHA MANATE + *
+
+   LD     ANTEAT
+   AD     WHALE
+   ST     TEMP1
+   LD     CAT
+   SB     DOG
+   ST     TEMP2
+   LD     TEMP1
+   DV     TEMP2
+   ST     TEMP3
+   LD     ELEPHA
+   AD     MANATE
+   ST     TEMP4
+   LD     TEMP3
+   MU     TEMP4
+   ST     TEMP5
+
+//=============================================================//
+
+Infix Expression: ( ( ( PURPLE * CHARTREUSE ) + ( RED / SILVER ) ) - ( TURQUOISE + AT ) ) 
+Postfix Expression:  PURPLE CHARTR * RED SILVER / + TURQUO AT + -
+
+   LD     PURPLE
+   MU     CHARTR
+   ST     TEMP1
+   LD     RED
+   DV     SILVER
+   ST     TEMP2
+   LD     TEMP1
+   AD     TEMP2
+   ST     TEMP3
+   LD     TURQUO
+   AD     AT
+   ST     TEMP4
+   LD     TEMP3
+   SB     TEMP4
+   ST     TEMP5
+
+//=============================================================//
+
+Infix Expression: ( ABCDEFG + ( STAR * ( OCEAN - ( JOYOUSLY / KITE ) ) ) ) 
+Postfix Expression:  ABCDEF STAR OCEAN JOYOUS KITE / - * +
+
+   LD     JOYOUS
+   DV     KITE
+   ST     TEMP1
+   LD     OCEAN
+   SB     TEMP1
+   ST     TEMP2
+   LD     STAR
+   MU     TEMP2
+   ST     TEMP3
+   LD     ABCDEF
+   AD     TEMP3
+   ST     TEMP4
+
+//=============================================================//
+
+Infix Expression: ( ( 72 + ( 109 * 32 ) ) / ( 47 - ( 2 + 17 ) ) ) 
+Postfix Expression:  72 109 32 * + 47 2 17 + - /
+
+   LD     109
+   MU     32
+   ST     TEMP1
+   LD     72
+   AD     TEMP1
+   ST     TEMP2
+   LD     2
+   AD     17
+   ST     TEMP3
+   LD     47
+   SB     TEMP3
+   ST     TEMP4
+   LD     TEMP2
+   DV     TEMP4
+   ST     TEMP5
+
+//=============================================================//
+
+Infix Expression: ( ( ( XRAY * 28 ) + 812 ) * ( ( 4 + QS ) - 12 ) ) 
+Postfix Expression:  XRAY 28 * 812 + 4 QS + 12 - *
+
+   LD     XRAY
+   MU     28
+   ST     TEMP1
+   LD     TEMP1
+   AD     812
+   ST     TEMP2
+   LD     4
+   AD     QS
+   ST     TEMP3
+   LD     TEMP3
+   SB     12
+   ST     TEMP4
+   LD     TEMP2
+   MU     TEMP4
+   ST     TEMP5
+
+//=============================================================//
+
+Infix Expression: ( ( 235678 + ( 73 - ( 12 * D ) ) ) + ( 899 / 4 ) ) 
+Postfix Expression:  235678 73 12 D * - + 899 4 / +
+
+   LD     12
+   MU     D
+   ST     TEMP1
+   LD     73
+   SB     TEMP1
+   ST     TEMP2
+   LD     235678
+   AD     TEMP2
+   ST     TEMP3
+   LD     899
+   DV     4
+   ST     TEMP4
+   LD     TEMP3
+   AD     TEMP4
+   ST     TEMP5
+
+//=============================================================//
+
+Infix Expression: ( MMMMMMMMM - ( NNNNNNN + ( ( ( OOOOOOOOO * PP ) / QQQ ) ) * RRRRRRRRRRR ) ) 
+Postfix Expression:  MMMMMM NNNNNN OOOOOO PP * QQQ / + RRRRRR * -
+
+   LD     OOOOOO
+   MU     PP
+   ST     TEMP1
+   LD     TEMP1
+   DV     QQQ
+   ST     TEMP2
+   LD     NNNNNN
+   AD     TEMP2
+   ST     TEMP3
+   LD     TEMP3
+   MU     RRRRRR
+   ST     TEMP4
+   LD     MMMMMM
+   SB     TEMP4
+   ST     TEMP5
+
+//=============================================================//
+
+Infix Expression: ( ( APPLE + ( BANANA * ( CHERRY + DURIAN ) ) ) / ( ELDERBERRY - ( FIG / GRAPE ) ) ) 
+Postfix Expression:  APPLE BANANA CHERRY DURIAN + * + ELDERB FIG GRAPE / - /
+
+   LD     CHERRY
+   AD     DURIAN
+   ST     TEMP1
+   LD     BANANA
+   MU     TEMP1
+   ST     TEMP2
+   LD     APPLE
+   AD     TEMP2
+   ST     TEMP3
+   LD     FIG
+   DV     GRAPE
+   ST     TEMP4
+   LD     ELDERB
+   SB     TEMP4
+   ST     TEMP5
+   LD     TEMP3
+   DV     TEMP5
+   ST     TEMP6
+
+//=============================================================//
+
+Infix Expression: ( ( SQUASH + ( TURNIP * BROCCOLI ) ) - ( CAULIFLOWER / ( CORN + ZUCCHINI ) ) ) 
+Postfix Expression:  SQUASH TURNIP BROCCO * + CAULIF CORN ZUCCHI + / -
+
+   LD     TURNIP
+   MU     BROCCO
+   ST     TEMP1
+   LD     SQUASH
+   AD     TEMP1
+   ST     TEMP2
+   LD     CORN
+   AD     ZUCCHI
+   ST     TEMP3
+   LD     CAULIF
+   DV     TEMP3
+   ST     TEMP4
+   LD     TEMP2
+   SB     TEMP4
+   ST     TEMP5
+
+//=============================================================//
+

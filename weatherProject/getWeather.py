@@ -3,21 +3,8 @@ from bs4 import BeautifulSoup
 import requests
 import re
 import datetime
-# from datetime import datetime, timedelta
-# import random
 import metpy.calc as mpcalc
 from metpy.units import units
-
-startHour=18
-endHour=22
-
-# def getRandomTime(startHour, endHour):
-#     startTime = datetime.combine(datetime.today(), datetime.min.time()) + timedelta(hours=startHour)
-#     endTime = datetime.combine(datetime.today(), datetime.min.time()) + timedelta(hours=endHour)
-
-#     randomSeconds=random.randint(int((endTime - startTime).total_seconds()), 0)
-#     randomTime=startTime + timedelta(seconds=randomSeconds)
-#     return randomTime
 
 current_date=datetime.datetime.now().strftime("%Y-%m-%d_%H.%M")
 degreeIndex=-1
@@ -36,7 +23,6 @@ athensGA=City(AthensGA_URL, "Athens, GA")
 kentOH=City(KentOH_URL, "Kent, OH")
 seattleWA=City(SeattleWA_URL, "Seattle, WA")
 phoenixAZ=City(PhoenixAZ_URL, "Phoenix, AZ")
-
 
 directions= [
     ["N", "north"],
@@ -135,8 +121,6 @@ def writeFile(weather):
         f.write(weather.snowfall)
         print("Weather Data for " + weather.location + " saved to file ", fileName, "\n")
 
-
-# randomTime=getRandomTime(startHour,endHour)
 # Athens, GA
 writeFile(getWeather(athensGA))
 writeFile(getWeather(kentOH))
